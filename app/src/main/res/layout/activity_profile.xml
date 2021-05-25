@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingTop="10dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="32dp"
+            android:padding="5dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/thoat_new_24"
+            android:id="@+id/imgBack"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Thông tin cá nhân"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"
+
+            />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="42dp"
+            android:padding="5dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_android_black_24dp"
+            android:id="@+id/imgprofile"/>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="5dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/userImage"
+        android:layout_marginTop="10dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:civ_border_color="#1097E6"
+        app:civ_border_width="1dp"
+        android:src="@drawable/ic_android_black_24dp"
+
+        />
+
+    <EditText
+        android:id="@+id/etuserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:maxLines="1"
+        android:background="@color/white"
+        android:textSize="20sp"
+       />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="2dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:visibility="gone"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:text="SAVE"
+        />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:indeterminateTint="@color/black"
+        android:id="@+id/progressBar"/>
+</LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</LinearLayout>
